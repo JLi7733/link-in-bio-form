@@ -13,8 +13,8 @@ class ItemsController < ApplicationController
     x = Item.new
 
     x.link_url = params.fetch("query_link_url")
-    x.link_description = params.fetch("link_description")
-    x.thumbnail_url = params.fetch("thumbnail_url")
+    x.link_description = params.fetch("query_link_description")
+    x.thumbnail_url = params.fetch("query_thumbnail_url")
 
     x.save
 
